@@ -34,8 +34,5 @@ libs:
 link:
 	sudo ln -sfn $(shell pwd)/$(TARGET) $(LINK)
 
-test:
-	$(shell pwd)/libs
-
 clean:
 	rm -rf *.o libs
