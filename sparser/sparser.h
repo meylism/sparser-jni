@@ -401,7 +401,6 @@ sparser_query_t *sparser_calibrate(BYTE *sample,
 
 		// The average parse cost.
 		parse_cost = parse_cost / parsed_records;
-
 		search_data_t sd;
 		memset(&sd, 0, sizeof(sd));
 		sd.num_records = records;
@@ -409,7 +408,6 @@ sparser_query_t *sparser_calibrate(BYTE *sample,
 		sd.full_parse_cost = parse_cost;
 		sd.best_cost = 0xffffffff;
 		sd.joint = bitmap_new(MAX_SAMPLES);
-
 		// temp buffer to store the result.
 		int result[MAX_SCHEDULE_SIZE];
 

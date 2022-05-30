@@ -1,7 +1,7 @@
 UNAME := $(shell uname -s)
 
 CC=clang++
-CFLAGS=-c -std=c++11 -fPIC -march=native -O3 -Wall
+CFLAGS=-c -std=c++11 -fPIC -march=native -O3 -Wall #-DDEBUG
 LDFLAGS=-shared -Wl
 LIBRARIES=-lz
 INCLUDES=-I$(JAVA_HOME)/include \
